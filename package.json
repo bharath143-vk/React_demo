@@ -1,0 +1,35 @@
+{
+  "name": "react_code",
+  "version": "1.0.0",
+  "description": "This is React demo",
+  "scripts": {
+    "test": "jest",
+    "start":"parcel index.html",
+    "build":"parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bharath143-vk/React_demo.git"
+  },
+  "keywords": [
+    "react",
+    "bharath"
+  ],
+  "author": "Bharath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bharath143-vk/React_demo/issues"
+  },
+  "homepage": "https://github.com/bharath143-vk/React_demo#readme",
+  "devDependencies": {
+    "parcel": "^2.15.1"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browsersList":[
+    "Last 2 chrome version",
+    "Last 2 Firefox version"
+  ]
+}

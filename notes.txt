@@ -1,0 +1,54 @@
+1) To ignite our app run command
+   //npx parcel index.html 
+   npx is to execute package
+   parcel acutally goes to source index.html and builds an app
+
+2) Browser scripts cannot have imports or exports.
+that's why we need to give (type=module) in script
+
+3) npx parcel build index.html
+  it will build three files html,css and js
+  whole code is fitted into those three files
+  and the code present in the files is production ready
+
+  we can add set of browserlist in package.json to support our app
+  
+  4) creating script in package.json scripts
+    "start":"parcel index.html" starting project in dev module
+    "build":"parcel build index.html" in production module
+
+   5) creating react elements is very clumsy,not developer
+   friendly that's why JSX react came 
+   jsx is not react (jsx and react both are separate)
+   jsx makes developer life easy
+
+   ** Jsx is not  html inside javascript
+     Jsx is a html like syntax
+     jsx is different,react is different,html is different
+
+     6) js engine won't understand jsx
+      jsx is not pure javascript
+      all jsx code is transpiled before going to the js engine
+      that transpiled code is understood by js engine
+      (parcel is doing all these behind the scenes)
+
+      **JSX is transpiled before it reaches js engine
+       transpiling is done by parcel()
+       Is only parcel doing all these things?
+       nope 
+       parcel is like a big manager it gives the responsibility
+       of transpiling to BABEL(a package)
+
+       ***
+       JSX => React.createElement => object=>render=>html
+      ***
+      BABEL is converting jsx to react
+
+      7) attributes given to jsx should be in camelcase
+      
+8)React component is a normal javascript function
+ensure to write component starting with capital letter
+which returns jsx 
+
+9) whatever code is inside {} jsx won't blindly run it
+it sanitize the data ,if anything malicious found it won't execute
